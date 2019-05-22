@@ -1128,7 +1128,7 @@ def nginx_restart(nginx_ctl, nginx_conf):
     # Nginx can take a moment to recognize a newly added TLS SNI servername, so sleep
     # for a second. TODO: Check for expected servername and loop until it
     # appears or return an error if looping too long.
-    time.sleep(1)
+    time.sleep(5)
 
 
 def install_ssl_options_conf(options_ssl, options_ssl_digest):
